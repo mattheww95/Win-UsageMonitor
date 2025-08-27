@@ -1,0 +1,8 @@
+[package]
+name = "usage-monitor"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+sysinfo = { version = "0.37.0", features = ["windows"] }
+windows = { version = "0.61.3", features = ["Win32_System", "Win32_System_Console"] }
