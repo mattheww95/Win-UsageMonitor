@@ -11,7 +11,7 @@ use windows::Win32::{Foundation::{GENERIC_READ, GENERIC_WRITE, HANDLE}, System::
 
 fn get_status_chr(input_val: f32, comp_val: f32) -> char {
     let mut status_chr = '✅';
-    if input_val < comp_val{
+    if input_val > comp_val{
         status_chr = '❌';
     }
     status_chr
